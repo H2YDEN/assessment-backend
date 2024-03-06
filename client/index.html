@@ -5,6 +5,29 @@
   </head>
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
+    <button id="accomplishmentButton">Get an accomplishment</button><br><br>
+
+    
+    <form id="accomplishmentPost">
+      <label for="message">Feeling down? Write an accomplishment here!</label><br>
+      <textarea id="submitAccomplishment" placeholder="Type message here..." rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Submit"><br><br>
+    </form>
+
+    <form id="accomplishmentEdit">
+      <label for="message">Accomplishment ID:</label>
+      <input type="text" id="accompID" name="accompID"><br>
+      <label for="message">Edit an accomplishment:</label><br>
+      <textarea id="editAccomplishment" placeholder="Type message here..." rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Submit"><br><br>
+    </form>
+
+    <form id="accomplishmentDelete">
+      <label for="message">Delete an accomplishment (acoomplishment ID):</label><br>
+      <input type="text" id="deleteID" name="deleteID"><br>
+      <input type="submit" value="Submit">
+    </form>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
